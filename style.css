@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/*  Global Style*/
+h1,h2,h3{
+    font-family: "Caveat", cursive;
+    font-size: 62.5%;
+    font-weight: 300;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 0.6rem;
+}
+
+body{
+    background-color:#d3d4d6 ;
+    margin:0px;
+
+}
+a{
+    color:#3c8453
+}
+a:hover{
+
+    color:#bcaa96;
+}
+html{
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+}
+*,*::before,*::after{
+    box-sizing:inherit;
+    margin:0;
+}
+.btn{/*  iT is a class i have to create in code for buttons */
+    /*background-color: #090f0b;  /* DOUBT HERE*/
+    color: #f6f6f6;
+    text-decoration: none; /* to remove underline of anchor tags*/
+}
+.download-link{
+    position: fixed;
+}
+
+/* Index*/
+.home{
+    background:url(/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+   
+    
+}
+.home .content{
+   
+    margin:0 auto;
+    max-width:900px;
+     padding:30px;
+     flex: 1 0 auto;
+
+}
+.home .content-bg{
+    background-color: #f6f6f6;
+    padding:20px;
+    margin:20px;
+    border-radius: 16px;
+}
+/* Resume*/
+.resume header::before{
+    background: url(/bg-home-office-studio.jpg) center/cover;
+    content:"";
+    display:block;
+    height:375px;
+
+
+}
+.resume-section{
+    margin-bottom: 50px;
+}
+   /* Profile*/
+
+
+    /* projects*/
+    .project-item{
+        float:left;
+        width:300px;
+        width:100%;
+        padding:30px;
+        
+    }
+    /* work experiSence*/
+    .work-section{
+       
+        float:left;
+        width:300px;
+        width:100%;
+    
+      
+
+    }
+    /* Education*/
+    .education{
+    float:left;
+    width:300px;
+    width:100%;
+    
+    }
+    
+
+    /* footer*/
+footer{
+        background-color: #222;
+        color:#d3d4d6;
+        display: flex;
+        justify-content: space-between;
+}
+footer a{
+    color:#bcaa96;
+}
+footer a:hover{
+
+    color:#178220;
+}
+.socials{
+    list-style-type: none;
+    padding:10px;
+ 
+}
+/* ===== Responsive Styles ===== */
+
+/* Tablets and below (<=768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .home .content,
+  .home .content-bg,
+  .project-item,
+  .work-section,
+  .education {
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .resume header::before {
+    height: 250px;
+  }
+
+  .download-link {
+    position: static;
+    display: block;
+    margin: 10px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer ul {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+/* Phones and below (<=480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .content-bg,
+  .resume-section {
+    padding: 10px;
+  }
+
+  .download-link {
+    font-size: 0.9rem;
+  }
+}
+
