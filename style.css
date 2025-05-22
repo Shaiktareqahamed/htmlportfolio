@@ -48,7 +48,7 @@ html,body{
 
 /* Index*/
 .home{
-    background:url(/bg-home-office-studio.jpg) no-repeat;
+    background:url(bg-home-office-studio.jpg) no-repeat;
     background-size: cover;
     display:flex;
     flex-direction: column;
@@ -67,11 +67,11 @@ html,body{
     background-color: #f6f6f6;
     padding:20px;
     margin:20px;
-    border-radius: 16px;
+    border-radius: 35px;
 }
 /* Resume*/
 .resume header::before{
-    background: url(/bg-home-office-studio.jpg) center/cover;
+    background: url(bg-home-office-studio.jpg) center/cover;
     content:"";
     display:block;
     height:375px;
